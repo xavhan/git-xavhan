@@ -11,11 +11,13 @@ function current_branch() {
 #
 alias gb="git branch -vv"
 alias gc="npm run commit"
+alias gdo="gd --name-only | xargs atom-beta"
 alias gpub='git push --set-upstream origin $(current_branch)'
 alias gunpub='git branch --unset-upstream'
 alias gcpa='git commit --patch'
 alias goops='gcan!'
 alias gpr='git pull-request'
+alias gres='git diff --name-only --diff-filter=U | uniq  | xargs atom-beta'
 alias grpa='git reset --patch'
 alias gs='git show'
 
