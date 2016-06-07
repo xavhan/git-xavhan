@@ -15,7 +15,7 @@ alias gpub='git push --set-upstream origin $(current_branch)'
 alias gunpub='git branch --unset-upstream'
 alias gcpa='git commit --patch'
 alias goops='gcan!'
-alias gpr='git pull-request'
+alias gpr='git pull-request | pbcopy'
 alias glast="gd --name-only | xargs atom-beta"
 alias gres='git diff --name-only --diff-filter=U | uniq  | xargs atom-beta'
 alias grpa='git reset --patch'
