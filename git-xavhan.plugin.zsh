@@ -10,7 +10,7 @@ function current_branch() {
 }
 #
 alias gb="git branch -vv"
-alias gc="npm run commit"
+alias gbD='git branch -D'
 alias gpub='git push --set-upstream origin $(current_branch)'
 alias gunpub='git branch --unset-upstream'
 alias gcpa='git commit --patch'
