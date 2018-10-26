@@ -14,14 +14,18 @@ alias gbD='git branch -D'
 alias gpub='git push --set-upstream origin $(current_branch)'
 alias gunpub='git branch --unset-upstream'
 alias gcpa='git commit --patch'
-alias goops='gcan!'
 alias gidem='gca -c HEAD'
+alias gpf='git push --force-with-lease'
 alias gpr='git pull-request'
-alias glast="gd --name-only | xargs atom"
-alias gres='git diff --name-only --diff-filter=U | uniq  | xargs atom'
+alias gprco='git pr checkout'
+alias gcopr='git pr checkout'
+alias glast="gd --name-only | xargs code"
+alias gres='git diff --name-only --diff-filter=U | uniq  | xargs code'
 alias grpa='git reset --patch'
 alias gs='git show'
 
-alias glogw="while true; do clear; glog -25 | cat; sleep 30; done"
-alias glolw="while true; do clear; glol -25 | cat; sleep 30; done"
-alias glolaw="while true; do clear; glola -25 | cat; sleep 30; done"
+alias gprnr='f() { ghi label $1 -a "Need Review" };f'
+alias gprnf='f() { ghi label $1 -a "Need Fixes" };f'
+alias gprqa='f() { ghi label $1 -a "Currently in QA" };f'
+alias gprok='f() { ghi label $1 -d "Need Review" -d "Need Fixes" };f'
+alias gprpp='f() { gprok $1 && gprqa $1 };f'
