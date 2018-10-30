@@ -27,6 +27,9 @@ alias grpa='git reset --patch'
 # other alias for gsh
 alias gs='git show'
 
+# cleanr git show
+alias gst ='gsb'
+
 ## hub aliases
 
 # PR against master 
