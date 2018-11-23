@@ -24,6 +24,12 @@ alias gres='git diff --name-only --diff-filter=U | uniq | xargs code'
 # patch reset
 alias grpa='git reset --patch'
 
+# soft reset 1
+alias grh1="git reset HEAD~1"
+
+# hard reset 1
+alias grh1h="git reset HEAD~1 --hard"
+
 # other alias for gsh
 alias gs='git show'
 
