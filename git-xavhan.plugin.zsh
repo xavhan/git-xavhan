@@ -34,7 +34,7 @@ alias grh1h="git reset HEAD~1 --hard"
 alias gs='git show'
 
 # cleanr git show
-alias gst ='gsb'
+alias gst='gsb'
 
 ## hub aliases
 
