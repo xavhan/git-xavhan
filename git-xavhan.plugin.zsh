@@ -33,8 +33,11 @@ alias grh1h="git reset HEAD~1 --hard"
 # other alias for gsh
 alias gs='git show'
 
-# cleanr git show
+# cleaner git show
 alias gst='gsb'
+
+# to complete gma
+alias gmc='git merge --continue'
 
 ## hub aliases
 
