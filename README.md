@@ -4,12 +4,8 @@ My additional aliases to complete oh-my-zsh git.plugin.zsh
 
 # Install 
 
-`mkdir -p $ZSH_CUSTOM/plugins/git-xavhan`
+`make`
 
-`wget -O $ZSH_CUSTOM/plugins/git-xavhan/git-xavhan.plugin.zsh https://raw.githubusercontent.com/xavhan/git-xavhan/master/git-xavhan.plugin.zsh`
-
-`vim ~/.zshrc`
-
-add  `git-xavhan` to your `plugins` collection
+then add `git-xavhan` to your `plugins` collection in your `vim ~/.zshrc`
 
 > plugins=(git git-xavhan)
