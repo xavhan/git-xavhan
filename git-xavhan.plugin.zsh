@@ -30,6 +30,12 @@ alias grh1="git reset HEAD~1"
 # hard reset 1
 alias grh1h="git reset HEAD~1 --hard"
 
+# rebase against develop
+alias grbd="git rebase develop"
+
+# rebase against develop interactively
+alias grbdi="git rebase develop -i"
+
 # other alias for gsh
 alias gs='git show'
 
